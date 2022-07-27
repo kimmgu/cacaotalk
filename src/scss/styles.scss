@@ -1,0 +1,39 @@
+@import 'variables.scss';
+// Components
+@import 'components/status-bar.scss';
+@import 'components/nav-bar.scss';
+@import 'components/screen-header.scss';
+@import 'components/alt-screen-header.scss';
+@import 'components/user-component.scss';
+@import 'components/badge.scss';
+@import 'components/icon-row.scss';
+@import 'components/no-mobile.scss';
+// Screens
+@import 'screens/login.scss';
+@import 'screens/friends.scss';
+@import 'screens/view.scss';
+@import 'screens/more.scss';
+@import 'screens/settings.scss';
+@import 'screens/chats.scss';
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+input:focus {
+  outline: none;
+}
+
+a {
+  color: #2e363e;
+  text-decoration: none;
+}
+
+.main-screen {
+  padding: 0px var(--horizontal-space);
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}

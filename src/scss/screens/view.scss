@@ -1,0 +1,105 @@
+.recommended-friends {
+  margin: 16px 0px;
+  padding: 16px 0px;
+  border-top: var(--border);
+  border-bottom: var(--border);
+  &__title {
+    color: var(--ultimategray);
+  }
+  span {
+    margin: 32px 0;
+    display: block;
+    text-align: center;
+    color: var(--ultimategray);
+  }
+}
+
+.open-chat__header {
+  display: flex;
+  justify-content: space-between;
+  color: var(--ultimategray);
+  margin-bottom: 16px;
+}
+
+.open-post {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__title {
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  &__hashtags {
+    text-transform: uppercase;
+    color: var(--ultimategray);
+  }
+  &__members {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    img {
+      width: 1rem;
+      height: 1rem;
+      border-radius: 50%;
+      margin-right: 4px;
+    }
+    .open-post__member-count {
+      color: var(--ultimategray);
+    }
+    .divider {
+      width: 1px;
+      height: 16px;
+      margin: 0 5px;
+      background-color: var(--ultimategray);
+    }
+    .open-post__member-status {
+      color: var(--illuminating);
+    }
+  }
+  .open-post__image {
+    position: relative;
+    img {
+      width: 120px;
+      height: 120px;
+      border-radius: 12px;
+    }
+    .open-post__like-count {
+      display: flex;
+      align-items: center;
+      background-color: var(--ultimategray);
+      color: var(--illuminating);
+      padding: 5px;
+      border-radius: 12px;
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      opacity: 0.8;
+      font-size: 12px;
+      span {
+        margin-left: 5px;
+      }
+      &:hover {
+        i {
+          will-change: transform;
+          animation: heartBeat 1s linear infinite;
+        }
+      }
+    }
+  }
+}
+
+@keyframes heartBeat {
+  0% {
+    color: var(--illuminating);
+    transform: none;
+  }
+  50% {
+    color: #8f1d21;
+    transform: scale(3);
+  }
+  100% {
+    color: var(--illuminating);
+    transform: none;
+  }
+}

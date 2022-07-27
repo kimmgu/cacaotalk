@@ -1,0 +1,20 @@
+{
+  "name": "cacaotalk",
+  "source": [
+    "src/index.html",
+    "src/friends.html",
+    "src/chat.html",
+    "src/view.html",
+    "src/more.html",
+    "src/settings.html",
+    "src/chats.html"
+  ],
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.2",
+    "parcel": "^2.6.2"
+  }
+}

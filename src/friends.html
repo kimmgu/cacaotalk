@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Friends | Cacao</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link rel="stylesheet" href="scss/styles.scss" />
+    <script type="module" src="app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/b544fcb91e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>20:22</span>
+      </div>
+      <div class="status-bar__column">
+        <span><i class="fa-solid fa-signal"></i></span>
+        <span><i class="fa-solid fa-wifi"></i></span>
+        <span><i class="fa-solid fa-battery-full"></i></span>
+      </div>
+    </div>
+
+    <header class="screen-header">
+      <h1 class="screen-header__title">Friends</h1>
+      <div class="screen-header__icons">
+        <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+        <span><i class="fa-solid fa-user-plus fa-lg"></i></span>
+        <span><i class="fa-solid fa-music fa-lg"></i></span>
+        <span
+          ><a href="settings.html"><i class="fa-solid fa-gear fa-lg"></i></a
+        ></span>
+      </div>
+    </header>
+
+    <nav class="nav">
+      <ul class="nav__ul">
+        <li class="nav__li">
+          <a class="nav__a" href="friends.html"
+            ><i class="fa-solid fa-user fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__li">
+          <a class="nav__a" href="chat.html">
+            <span class="nav__chat__badge badge">1</span>
+            <i class="fa-regular fa-comment fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__li">
+          <a class="nav__a" href="view.html"
+            ><i class="fa-regular fa-eye fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__li">
+          <a class="nav__a" href="#"
+            ><i class="fa-solid fa-bag-shopping fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__li">
+          <a class="nav__a" href="more.html">
+            <span class="nav__more__badge"></span>
+            <i class="fa-solid fa-ellipsis fa-2x"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="splash-screen">
+      <i class="fa-solid fa-comment"></i>
+    </div>
+
+    <main class="friends-screen">
+      <div class="user-component">
+        <div class="user-component__column">
+          <img
+            src="../public/FranklinClinton.webp"
+            alt="Franklin Clinton"
+            class="user-component__profile__image--l"
+          />
+          <div class="user-component__profile">
+            <h3 class="user-component__profile__name">Frank</h3>
+            <h4 class="user-component__profile__status-message">Oh, woo-ee!</h4>
+          </div>
+        </div>
+        <div class="user-component__column"></div>
+      </div>
+      <div class="friends-screen__channel">
+        <div class="friends-screen__channel-header">
+          <span>Channel</span>
+          <i class="fas fa-chevron-up fa-xs"></i>
+        </div>
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              src="../public/channel.png"
+              alt="Channel"
+              class="user-component__profile__image--s"
+            />
+            <div class="user-component__profile">
+              <h3 class="user-component__profile__channel">Channel</h3>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <div>
+              <span>0</span>
+              <i class="fas fa-chevron-right fa-xs"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div id="no-mobile">
+      <span>Do you guys not have phones?</span>
+    </div>
+  </body>
+</html>

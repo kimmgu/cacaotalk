@@ -1,0 +1,72 @@
+.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f9f9fa;
+  padding: 25px 50px;
+  box-sizing: border-box;
+  border-top: 1px solid var(--ultimategray);
+  z-index: 1;
+  &__ul {
+    display: flex;
+    justify-content: space-between;
+    .nav__li {
+      transform: translateY(64px);
+      animation: appearAnimation 1s ease-in-out forwards;
+      opacity: 0;
+      &:nth-child(2) {
+        animation-delay: 0.25s;
+      }
+      &:nth-child(3) {
+        animation-delay: 0.5s;
+      }
+      &:nth-child(4) {
+        animation-delay: 0.75s;
+      }
+      &:last-child {
+        animation-delay: 1s;
+      }
+      .nav__a {
+        color: #2e363e;
+        position: relative;
+        .nav__chat__badge {
+          position: absolute;
+          left: 15px;
+          bottom: 15px;
+          animation: badgeAnimation 3s ease-in-out infinite;
+        }
+        .nav__more__badge {
+          background-color: var(--illuminating);
+          display: block;
+          width: 5px;
+          height: 5px;
+          border-radius: 2.5px;
+          position: absolute;
+          right: -5px;
+        }
+      }
+    }
+  }
+}
+
+@keyframes badgeAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-5px) rotateY(360deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+@keyframes appearAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}

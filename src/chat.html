@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat | Cacao</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link rel="stylesheet" href="scss/styles.scss" />
+    <script type="module" src="app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/b544fcb91e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>20:22</span>
+      </div>
+      <div class="status-bar__column">
+        <span><i class="fa-solid fa-signal"></i></span>
+        <span><i class="fa-solid fa-wifi"></i></span>
+        <span><i class="fa-solid fa-battery-full"></i></span>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <ul class="nav__ul">
+        <li class="nav__li">
+          <a class="nav__a" href="friends.html"
+            ><i class="fa-regular fa-user fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__li">
+          <a class="nav__a" href="chat.html">
+            <span class="nav__chat__badge badge">1</span>
+            <i class="fa-solid fa-comment fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__li">
+          <a class="nav__a" href="view.html"
+            ><i class="fa-regular fa-eye fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__li">
+          <a class="nav__a" href="#"
+            ><i class="fa-solid fa-bag-shopping fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__li">
+          <a class="nav__a" href="more.html">
+            <span class="nav__more__badge"></span>
+            <i class="fa-solid fa-ellipsis fa-2x"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <header class="screen-header">
+      <h1 class="screen-header__title">Chat</h1>
+      <div class="screen-header__icons">
+        <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+        <span><i class="fa-regular fa-comment-dots fa-lg"></i></span>
+        <span><i class="fa-solid fa-music fa-lg"></i></span>
+        <span
+          ><a href="settings.html"><i class="fa-solid fa-gear fa-lg"></i></a
+        ></span>
+      </div>
+    </header>
+
+    <main class="main-screen">
+      <a href="chats.html">
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              src="../public/MichaelDeSanta.webp"
+              alt="Michael De Santa"
+              class="user-component__profile__image"
+            />
+            <div class="user-component__profile">
+              <h3 class="user-component__profile__name">Mike</h3>
+              <h4 class="user-component__profile__status-message">
+                The Big One?
+              </h4>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <span class="user-component__time">20:22</span>
+            <div class="badge">1</div>
+          </div>
+        </div>
+      </a>
+    </main>
+
+    <div id="no-mobile">
+      <span>Do you guys not have phones?</span>
+    </div>
+  </body>
+</html>

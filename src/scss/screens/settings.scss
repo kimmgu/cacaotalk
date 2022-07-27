@@ -1,0 +1,18 @@
+.settings__setting {
+  padding: 16px 0;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &:last-child {
+    padding: 16px 0px 64px 0px;
+    border-bottom: var(--border);
+  }
+  i {
+    opacity: 0.7;
+    margin-right: 16px;
+  }
+  .settings__setting-column:last-child {
+    color: var(--ultimategray);
+  }
+}

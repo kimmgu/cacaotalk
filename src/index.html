@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      CacaoTalk, where people and the world come to get connected | Cacao
+    </title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link rel="stylesheet" href="scss/styles.scss" />
+    <script type="module" src="app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/b544fcb91e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>20:22</span>
+      </div>
+      <div class="status-bar__column">
+        <span><i class="fa-solid fa-signal"></i></span>
+        <span><i class="fa-solid fa-wifi"></i></span>
+        <span><i class="fa-solid fa-battery-full"></i></span>
+      </div>
+    </div>
+
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcome to CacaoTalk</h1>
+      <p class="welcome-header__text">
+        If you have a Cacao Account,<br />
+        log in with your email or phone number.
+      </p>
+    </header>
+
+    <form action="friends.html" method="get" class="login-form">
+      <input name="username" type="text" placeholder="Email or phone number" />
+      <input name="password" type="password" placeholder="Password" />
+      <button>Log in</button>
+      <button>Sign up</button>
+      <a href="#">Find Cacao Account or Password</a>
+    </form>
+
+    <div id="no-mobile">
+      <span>Do you guys not have phones?</span>
+    </div>
+  </body>
+</html>
